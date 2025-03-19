@@ -1,0 +1,397 @@
+/* Reset Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    background: rgba(255, 182, 193, 0.8); /* Light pink */
+    transition: background 0.3s ease;
+    z-index: 1000;
+}
+/* Cart Icon Styling */
+.cart-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#cart-icon {
+    width: 40px;
+    height: 40px;
+}
+
+#cart-count {
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    display: none;
+}
+
+/* Cart Popup Styling */
+.cart-popup {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 2px solid #ff4081;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart-popup ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-popup li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#order-now {
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+#order-now:hover {
+    background: #ff69b4;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.quote-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* Transparent dark background */
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: cursive;
+    width: 80%;
+}
+.testimonials-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background: #fce4ec; /* Light pink */
+    position: relative;
+}
+
+.testimonial-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    object-fit: cover;
+    margin: 0 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    border: black;
+}
+
+.testimonial-img:hover {
+    transform: scale(1.1);
+}
+
+.testimonial-content {
+    max-width: 600px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: cursive;
+    color: goldenrod;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: seashell;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4081;
+}
+
+/* Change navbar background on scroll */
+.scrolled {
+    background: #ff69b4; /* Darker pink */
+}
+
+/* Image Below Header */
+.top-image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.top-image img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Sections - Width & Styling */
+section {
+    width: 80%; /* Avoid full width */
+    margin: 40px auto; /* Centering */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: cursive;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Zoom effect & Darker Background on Hover */
+.zoom-effect:hover, .zoom-effect:active {
+    transform: scale(1.05);
+    filter: brightness(85%);
+}
+
+/* Hero Section - Background Image */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?flowers,roses') no-repeat center center/cover;
+    color: #d1b2af;
+}
+
+/* Section Background Colors */
+#about {
+    background: #ffd1dc; /* Misty Rose */
+}
+
+#services {
+    background: #ffcccb; /* Pastel Pink */
+}
+
+#testimonials {
+    background: #6f434b; /* Light Coral Pink */
+    color: white;
+}
+
+#contact {
+    background: #612e37; /* Darker Pink */
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Bouquets Gallery */
+.bouquet-gallery {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+/* Overlay Effect for Image Names */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 105, 180, 0.8);
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover .overlay {
+    opacity: 1;
+}
+.contact-section {
+    background: #ffccd5; /* Soft pink background */
+    padding: 50px 20px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #ff4081; /* Dark pink */
+}
+
+.contact-info i {
+    font-size: 24px;
+    color: #ff4081;
+    margin-right: 10px;
+}
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Headings (Elegant Style) */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Hero Section Quote */
+.hero h1 {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: rgba(255, 255, 255, 0.9); /* White with transparency */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Testimonials Special Cursive */
+.testimonials-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff4081;
+    text-align: center;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
